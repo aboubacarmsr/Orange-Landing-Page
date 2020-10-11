@@ -1,0 +1,207 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+}
+
+img{
+    width: 100%;
+}
+
+.logo{
+    width: 100px;
+    transform: translateX(130%);
+    cursor: pointer;
+}
+
+header{
+    width: 100%;
+    height: 10vh;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 5rem;
+}
+
+.nav-links li{
+    list-style: none;
+    margin-right: 2rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.icons{
+    margin-right: 5rem;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.icons ul{
+    display: flex;
+}
+
+.icons ul li{
+    list-style: none;
+}
+
+.icons ul li:first-child{
+    margin-right: 3rem;
+}
+
+.main-content{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+}
+
+.juice{
+    width: 300px;
+}
+
+.juice img{
+    animation: MoveUpDown 1.5s linear infinite;
+}
+
+.main-content h1{
+    text-transform: uppercase;
+    font-size: 150px;
+    font-weight: 800;
+    color: #2e2e2e;
+}
+
+.main-content h1:first-child{
+    position: relative;
+    top: 200px;
+    left: 190px;
+    z-index: -1;
+}
+
+.main-content .juice h1{
+    position: relative;
+    bottom: 250px;
+    left: 190px;
+}
+
+.circle{
+    background-color: #fabd4a;
+    border-radius: 50%;
+    position: absolute;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.small{
+    width: 150px;
+    height: 150px;
+    top: 100px;
+    left: -30px;
+}
+
+.big{
+    width: 700px;
+    height: 700px;
+    top: -500px;
+    right: -250px;
+}
+
+.left-text{
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    top: 70px;
+    left: 90px;
+    letter-spacing: 2px;
+    width: 150px;
+}
+
+.right-text{
+    position: absolute;
+    right: 60px;
+    bottom: 30%;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.right-text p{
+    width: 300px;
+    margin: 10px;
+}
+
+.vitamins{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.vitamins li{
+    list-style: none;
+    margin: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.vitamins li:first-child{
+    border-bottom: 2px solid #52e3e1;
+}
+
+.social{
+    position: absolute;
+    left: 30px;
+    top: 50%;
+}
+.social ul{
+    flex-direction: column;
+}
+.social li{
+    width: 40px;
+    height: 40px;
+    border: 2px solid orange;
+    display: flex;
+    margin-top: 10px;
+    border-radius: 50%;
+    color: orange;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .5 ease-in;
+    
+}
+.social li:hover{
+    background: orange;
+    color: #fff;
+}
+
+.leaves{
+    position: absolute;
+    top: 45px;
+    right: 0;
+    width: 80%;
+    z-index: -1;
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(5px);
+    }
+  }
+
